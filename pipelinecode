@@ -1,0 +1,12 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('GitPull') {
+            steps {
+                git ' https://github.com/saiprasad-oss/pipelineproject.git'
+            }
+        }
+    }
+}
+
